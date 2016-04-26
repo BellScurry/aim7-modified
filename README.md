@@ -81,11 +81,17 @@ void register_test(char *name, char *args, int (*f)(), int factor, char *units) 
 ####Files
 - Added or Modified to AIM7
   - aim7.h
-  - fork\_test.c <br />
-  split *fork\_*() from _creat-clo.c_
+  <br />: Combine all macro and declarations in headers and source codes & Add custom repetition count macro. 
+  - fork\_test.c
+  <br />: Split *fork\_*() from _creat-clo.c_
   - main.c
-  split main() function from _multitask.c_
+  <br />: Split main() function from _multitask.c_
 - Removed from AIM7
+  - suite.h
+  <br />: All contents in _aim7.h_
+  - funcal.h
+  - testerr.h
+  - files.h
   - rtmsec.c
   - fillin.c
   - funcal.c
