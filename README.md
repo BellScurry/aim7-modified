@@ -6,6 +6,31 @@ See [this](http://manycoreos.synology.me/MediaWiki/index.php?title=%EB%B6%84%ED%
 
 
 ##How Original AIM7 Works
+####AIM7 File List
+_Source Code & Headers_
+- Headers
+  - files.h
+  - funcal.h
+  - suite.h
+  - testerr.h
+- Source Codes
+  - multitask.c
+  - funcal.c
+  - add.c
+  - mul.c
+  - div.c
+  - num\_fcns.c
+  - int\_fncs.c
+  - rand.c
+  - ram.c
+  - disk1.c
+  - disk\_src.c
+  - creat-clo.c
+  - pipe-test.c
+  - rpt.c
+  - rtmsec.c
+  - fillin.c
+
 Every .c file has only one non-static function, whose name is same with the file name. <br />
 (ex) *add.c* has a function '*add\_c*()'
 
