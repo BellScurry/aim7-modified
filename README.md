@@ -29,6 +29,15 @@ See [this](http://manycoreos.synology.me/MediaWiki/index.php?title=%EB%B6%84%ED%
   - rpt.c
   - rtmsec.c
   - fillin.c
+- Workload
+  - workload.compute
+  - workload.dbase
+  - workload.fserver
+  - workload.shared
+  - aim\_1.sh
+  - aim\_2.sh
+  - aim\_3.sh
+- _etc_.
 
 Every .c file has only one non-static function, whose name is same with the file name. <br />
 (ex) *add.c* has a function '*add\_c*()'
