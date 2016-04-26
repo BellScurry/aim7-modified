@@ -4,7 +4,7 @@ This is benchmark for manycore OS simulations. <br />
 
 This benchmark is made by modifying AIM7 benchmark. <br />
 
-If you want to see original AIM7 benchmark, see [AIM7 mirror](BellScurry/aim7-mirror) or [https://sourceforge.net/projects/aimbench/](https://sourceforge.net/projects/aimbench/). <br />
+If you want to see original AIM7 benchmark, see [AIM7 mirror](../../BellScurry/aim7-mirror) or [https://sourceforge.net/projects/aimbench/](https://sourceforge.net/projects/aimbench/). <br />
 
 If you want to know about 'Manycore OS Project with ETRI', see [this](http://manycoreos.synology.me/MediaWiki/index.php?title=%EB%B6%84%ED%95%A0%ED%98%95_%EA%B5%AC%EC%A1%B0_%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98)
 
