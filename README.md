@@ -78,12 +78,12 @@ void register_test(char *name, char *args, int (*f)(), int factor, char *units) 
 ```
 
 ##How Modified AIM7 Works
-####Files
+####AIM7-Modified File List
 - Added or Modified to AIM7
   - aim7.h
   <br />: Combine all macro and declarations in headers and source codes & Add custom repetition count macro. 
   - fork\_test.c
-  <br />: Split *fork\_*() from _creat-clo.c_
+  <br />: Split *fork\_test*() from _creat-clo.c_
   - main.c
   <br />: Split main() function from _multitask.c_
 - Removed from AIM7
