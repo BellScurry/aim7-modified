@@ -76,3 +76,17 @@ void register_test(char *name, char *args, int (*f)(), int factor, char *units) 
 	num_cmdargs++;
 }
 ```
+
+##How Modified AIM7 Works
+####Files
+- Added or Modified to AIM7
+  - aim7.h
+  - fork\_test.c <br />
+  split *fork\_*() from _creat-clo.c_
+  - main.c
+  split main() function from _multitask.c_
+- Removed from AIM7
+  - rtmsec.c
+  - fillin.c
+  - funcal.c
+  - rpt.c
