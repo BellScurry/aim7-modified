@@ -12,7 +12,7 @@ Every .c file has a function whose name is same with the file name. <br />
 We will call the function '_register function_', because the functions register all function in the file. <br />
 (ex) *add\_c*() will register all functions in *add.c*: *add\_double*(), *add\_float*(), *add\_long*(), *add\_short*(), *add\_int*().
 
-Every _register function_ will return (_source_*\_file *\*) result.
+Every _register function_ will return (source\_file \*) result.
 
 In _suite.h_, data type *source\_file* is defined.
 ```c
