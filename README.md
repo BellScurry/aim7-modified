@@ -7,7 +7,6 @@ See [this](http://manycoreos.synology.me/MediaWiki/index.php?title=%EB%B6%84%ED%
 
 ##How Original AIM7 Works
 ####AIM7 File List
-_Source Code & Headers_
 - Headers
   - files.h
   - funcal.h
