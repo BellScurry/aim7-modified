@@ -6,10 +6,10 @@ See [this](http://manycoreos.synology.me/MediaWiki/index.php?title=%EB%B6%84%ED%
 
 
 ##How Original AIM7 Works
-Every .c file has a function whose name is same with the file name. <br />
+Every .c file has only one non-static function, whose name is same with the file name. <br />
 (ex) *add.c* has a function '*add\_c*()'
 
-We will call the function '_register function_', because the functions register all function in the file. <br />
+We will call the the non-static functions in .c files '_register function_', because the functions register all function in the file. <br />
 (ex) *add\_c*() will register all functions in *add.c*: *add\_double*(), *add\_float*(), *add\_long*(), *add\_short*(), *add\_int*().
 
 Every _register function_ will return (source\_file \*) result.
@@ -23,4 +23,23 @@ typedef struct {
     char *date;
     char *time;
 } source_file;
+```
+
+In _multitask.c_, function *register\_test*() is defined.
+```c
+void register_test(char *name, char *args, int (*f)(), int factor, char *units) {
+
+    if (num_cmdargs >= MAXCMDARGS) {
+	
+        fprintf(stderr, "\nInternal Error: Attempted to register too many tests.\n");
+		exit(1);
+	}
+
+	cmdargs[num_cmdargs].name = name;
+	cmdargs[num_cmdargs].args = args;
+	cmdargs[num_cmdargs].f = f;
+	cmdargs[num_cmdargs].factor = -1;	    /* unused by multitask */
+	cmdargs[num_cmdargs].units = units;
+	num_cmdargs++;
+}
 ```
