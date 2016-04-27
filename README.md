@@ -61,6 +61,38 @@ typedef struct {
 } source_file;
 ```
 
+For example, in _add.c_, _register function_ looks like:
+```c
+#define PI (3.14159)
+#define OPS_PER_LOOP 12
+
+source_file *add_c() {
+
+	static char args_double[256];
+	static char args_float[256];
+	static source_file s = { " @(#) add.c:1.9 3/4/94 17:16:58",	/* SCCS info */
+		__FILE__, __DATE__, __TIME__
+	};
+
+	sprintf(args_double, "%g %g 1500000", PI, -PI);	/* arbitrary use of pi */
+	register_test("add_double", args_double, add_double,
+		      1500 * OPS_PER_LOOP,
+		      "Thousand Double Precision Additions");
+
+	sprintf(args_float, "%g %g 1000000", 3.5, -3.5);	/* 3.5 to minimize round-off error */
+	register_test("add_float", args_float, add_float, 1000 * OPS_PER_LOOP,
+		      "Thousand Single Precision Additions");
+
+	register_test("add_long", "3 -3 5000000", add_long,
+		      5000 * OPS_PER_LOOP, "Thousand Long Integer Additions");
+	register_test("add_int", "3 -3 5000000", add_int, 5000 * OPS_PER_LOOP,
+		      "Thousand Integer Additions");
+	register_test("add_short", "3 -3 2000000", add_short,
+		      2000 * OPS_PER_LOOP, "Thousand Short Integer Additions");
+	return &s;
+}
+```
+
 In _multitask.c_, function *register\_test*() is defined.
 ```c
 void register_test(char *name, char *args, int (*f)(), int factor, char *units) {
