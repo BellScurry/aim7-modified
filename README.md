@@ -1,4 +1,4 @@
-AIM7 Modified
+AIM7-Modified
 =================================
 This is benchmark for manycore OS simulations. <br />
 
