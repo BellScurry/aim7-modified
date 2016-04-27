@@ -17,6 +17,7 @@ If you want to know about 'Manycore OS Project with ETRI', see [this](http://man
   - testerr.h
 - Source Codes
   - multitask.c
+  - rpt.c
   - funcal.c
   - add.c
   - mul.c
@@ -29,7 +30,6 @@ If you want to know about 'Manycore OS Project with ETRI', see [this](http://man
   - disk\_src.c
   - creat-clo.c
   - pipe-test.c
-  - rpt.c
   - rtmsec.c
   - fillin.c
 - Workload
@@ -42,7 +42,7 @@ If you want to know about 'Manycore OS Project with ETRI', see [this](http://man
   - aim\_3.sh
 - _etc_.
 
-Every .c file except _multitask.c_ has only one non-static function, whose name is same with the file name. <br />
+Every .c file except _multitask.c_ and _rpt.c_ has only one non-static function, whose name is same with the file name. <br />
 (ex) *add.c* has a function '*add\_c*()'
 
 We will call the the non-static functions in .c files '_register function_', because the functions register all function in the file. <br />
